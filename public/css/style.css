@@ -1,0 +1,570 @@
+:root {
+    --primary-color: #03306B;
+    --secondary-color: #2F9AD8;
+    --tertiary-color: #FFFFFF;
+    --quaternary-color: #B02B38;
+}
+
+            /*
+
+                || General Styles 
+
+            */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Karla', sans-serif; */
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.563rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+h2 {
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+hr {
+    width: 50vw;
+    margin: 4rem auto;
+    border-top: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    padding: 1rem 5%;
+    background-color: var(--tertiary-color);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    height: auto;
+    margin-bottom: 2rem;
+    background-color: var(--tertiary-color);
+}
+
+footer {
+    height: 10vh;
+    background-color: #b02b38;
+}
+
+nav {
+    height: 20vh;
+    display: inherit;
+    align-items: inherit;
+}
+
+button {
+    margin-left: 2rem;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+li, a, button {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.logo {
+    height: 100px;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.menu {
+    height: inherit;
+    list-style: none;
+    display: inherit;
+    align-items: inherit;
+}
+
+.dropdown {
+    background-color: var(--primary-color);
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+    position: absolute; /* Corrige la separación entre los elementos de la barra de navegación */
+    display: none;
+}
+
+.hamburger-button {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.facebook-icon {
+    width: 35px;
+    height: 39px;
+}
+
+.facebook-icon {
+    fill: #395185;
+    transition: all 0.3s ease 0s;
+}
+
+.facebook-icon:hover {
+    fill: #1877F2;
+}
+
+.container {
+    width: 100%;
+    padding: 1rem 5%;
+}
+
+.grid {
+    width: 100%;
+    padding: 1rem 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.main-title {
+    height: 25vh;
+    padding-top: 25vh;
+    padding-bottom: 5vh;
+}
+
+.main-title .container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    height: inherit;
+}
+
+.menu li a {
+    height: inherit;
+    padding: 0 1rem;
+    transition: all 0.1s ease 0s;
+    display: flex;
+    align-items: center;
+}
+
+.menu li:hover,
+.menu li:hover > a {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+ul li:hover > .dropdown,
+.dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.dropdown li {
+    width: 12rem;
+}
+
+.dropdown li a {
+    padding: 1.5rem;
+    color: var(--tertiary-color);
+    font-size: 0.8rem;
+}
+
+.dropdown li a:hover {
+    color: var(--secondary-color);
+}
+
+            /*
+
+                || Landing Styles 
+
+            */
+
+.landing {
+    height: 100vh;
+    margin-bottom: 0;
+}
+  
+.image-container {
+    height: inherit;
+    background-size: cover;
+    background-position: center;
+}
+  
+.landing .image-container {
+    background-image: url(../img/landing.jpg);
+}
+
+footer .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container p {
+    color: var(--tertiary-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+            /*
+
+                || Events Styles
+
+            */
+
+#events-title {
+    height: auto;
+    margin: 0;
+    padding: 2rem 0 0 0;
+}
+
+.events .container {
+    margin: 2rem 0;
+    display: flex;
+}
+
+.events .text-content {
+    padding-right: 0;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.events .image-content {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+.events h2 {
+    padding: 0;
+}
+
+.events h2, h3 {
+    text-transform: uppercase;
+}
+
+.events button {
+    width: 8rem;
+    height: 2.5rem;
+    margin: 0;
+    border-radius: 5%;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease 0s;
+}
+
+.events button:hover {
+    background-color: var(--secondary-color);
+}
+
+            /*
+
+                || History in Nicaragua Styles
+            
+            */
+
+.history-nicaragua .container {
+    margin: 4rem auto;
+    display: flex;
+}
+
+.history-nicaragua .text-content {
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+.history-nicaragua .image-content {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+            /*
+
+                || Instructors & Instructor Assistants Styles
+
+            */
+
+.instructors .container {
+    margin: 4rem auto;
+    display: flex;
+}
+
+.instructors .text-content {
+    height: 70vh;
+} 
+
+.instructors .image-content {
+    height: 70vh;
+    display: inherit;
+    justify-content: center;
+} 
+
+.instructors .image-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.instructors .image-content {
+    padding: 0 2rem 0 0;
+}
+
+.instructors .text-content {
+    padding: 0 0 0 2rem; 
+}
+        
+            /*
+
+                || Schools Styles
+
+            */
+
+
+.schools .grid {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 300px;
+    cursor: pointer;
+}
+
+.schools .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    min-height: 130px;
+  }
+
+.schools .card-header img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+            /*
+
+                || Board Styles
+
+            */
+
+.board .grid {
+    width: 80%;
+    margin: 4rem auto;
+
+}
+
+.board .card {
+    height: 20rem;
+    cursor: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board .card .card-container {
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: column;
+}
+
+
+.board img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.board h2 {
+    padding-top: 1rem;
+}
+
+.board button {
+    width: 8rem;
+    height: 2.5rem;
+    margin: 0;
+    border-radius: 5%;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease 0s;
+}
+
+.board button:hover {
+    background-color: var(--secondary-color);
+}
+
+            /*
+
+                || Taekwon-Do Section Styles
+
+            */
+
+.taekwondo .container {
+    margin: 4rem 0;
+    display: flex;
+}
+
+.text-content {
+    padding-right: 2rem;
+    width: 50%;
+} 
+
+.image-content {
+    padding-left: 2rem;
+    width: 50%;
+} 
+
+.image-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+            /*
+
+                || Photos Styles
+
+            */
+
+.photos .grid {
+    margin: 4rem auto;
+}
+
+.photos img {
+    width: 25rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+            /* 
+
+                || Videos Styles
+
+            */
+
+.videos .grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+            /*
+
+                || Contact Section Styles
+
+            */
+
+form {
+    width: 50%;
+}
+
+label {
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    border: 2px solid var(--secondary-color);
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact button {
+    width: 8rem;
+    height: 2.5rem;
+    margin: 0;
+    border-radius: 5%;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease 0s;
+}
+
+.contact button:hover {
+    background-color: var(--secondary-color);
+}
+
+            /*
+
+                || Responsive Design: Inactive
+
+            */
+
+  /*
+@media screen and (max-width: 1017px) {
+    .hamburger-button {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+    .menu {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    .menu.is-active {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+    }
+}
+
+*/
