@@ -9,6 +9,7 @@
     <title>Asociación Nicaragüense de Taekwon-Do ITF</title>
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
 </head>
 <body>
@@ -56,8 +57,8 @@
                         <li><a href="photos.html">Fotografías</a></li>
                         <li><a href="videos.html">Videografía</a></li>
                     </ul>
-                </li>
-                <li><a href="contact.html">Contáctanos</a></li> -->
+                </li> -->
+                <li><a href="contact.php">Contáctanos</a></li>
                 <button>
                     <a href="https://www.facebook.com/AsosiacionNicaraguenseTaekwondoITF/" target="_blank">
                         <svg class="facebook-icon" viewBox="0 0 24 24" aria-hidden="true">
